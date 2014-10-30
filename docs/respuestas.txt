@@ -1,0 +1,57 @@
+Repositorio remoto.
+
+35.Cree un nuevo directorio en hian denominado repo_remoto (mkdir repo_remoto). 
+Este será el directorio de trabajo durante la realización de la segunda parte de esta 
+práctica.
+
+
+
+36. Sitúese en el directorio repo_remoto y cree la estructura de directorios que le permita 
+tener subcarpetas para el código y los documentos, es decir:
+un subdirectorio src
+un subdirectorio docs
+37.Cree un fichero respuestas.txt en el directorio docs. Escriba en él las respuestas a las 
+preguntas que se platean en la segunda parte de este documento.
+38. ¿Qué es GitHub?
+39.Cree una cuenta en GitHub (http://github.com).
+40. Sitúese en la Pestaña de Comandos (Dashboard) de Cloud 9 . En la sección de la 
+derecha, bajo el epígrafe “account settings” seleccione la opción “Show your SSH key”.
+41.Copie en el almacenamiento temporal la clave-pública. Para ello, pulse el boton verde 
+“copy”.
+42. Sitúese en la pestaña de GitHub y añada clave-pública que ha copiado.
+a) En la barra de usuario, en la esquina superior derecha de la página, haga clik en el 
+icono de “Configuración de la cuenta” (Account Settings).
+b) En la barra de opciones que aparece en a la izquierda haga clik en la etiqueta 
+“Claves SSH” (SSH Keys).
+c) Haga clik en el botón “Add SSH key” que aparece a la derecha.
+d) En el campo de texto Título (Title)) escriba Cloud 9
+e) En el área de texto Clave (Key)) pegue (Ctrl+V) la clave que copió en el ejercicio 12.
+f) Pulse el botón verde para crear la clave (Add key).
+43. ¿Qué es un repositorio remoto?
+44.Cree un repositorio en GitHub
+a) En la barra de usuario, en la esquina superior derecha de la página, haga click en el 
+icono de “Crear un repositorio nuevo” (Create a New Repo).
+b) Introduzca el nombre prct
+c) Seleccione que quiere hacer el repositorio público.
+d) No seleccione la casilla de crear el fichero readme.md.
+e) Pulse el botón para crear el repositorio (Create repository)
+45. Situado en el directorio de trabajo (repo_remoto), inicialícelo para que sea un 
+repositorio git. (git init ). 46.Compruebe que se crea el directorio .git (ls -la).
+47.Cree un fichero test01 en el directorio src. ( echo "Se ha añadido un repositorio 
+remoto" > src/test01). 
+48.Añada todos los ficheros y subdirectorios del directorio actual al índice del repositorio 
+git. (git add . )
+49.Confirme (commit) los cambios del índice en el repositorio git local.
+( git commit -m "Primera confirmación - ejemplo de remotos" )
+50.Muestre el fichero con los registros realizados en el repositorio hasta el momento. ( git 
+log).
+51.Cree un enlace al repositorio remoto con nombre corto origin
+( git remote add origin git@github.com:aluXXXXXXXX/prct.git )
+52. Empuje los cambios en el repositorio remoto denominado origin.
+( git push -u origin master )
+53.Muestre los detalles del repositorio remoto denominado origin. ( git remote show 
+origin ).
+54.Muestre los repositorios remotos que están definidos ( git remote -v ).
+55. Escriba en la tarea habilitada en el campus virtual:
+a) La URL del espacio de trabajo de Cloud 9 (https://c9.io/alu01000XXXXX/hian).
+b) La dirección del repositorio que ha creado en GitHub.
